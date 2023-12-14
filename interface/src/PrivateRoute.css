@@ -1,0 +1,69 @@
+.navbar {
+  background-color: rgb(183, 244, 199);
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  margin-top: 6px;
+}
+
+.nav-item {
+  padding-right: 10%;
+}
+
+.app-title {
+  margin-right: -10%;
+}
+
+.logo {
+  margin-right: 10%;
+}
+
+h5 {
+  color: #35779b;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu {
+  display: flex;
+  margin: auto;
+  padding-left: 0%;
+}
+
+.modal-text {
+  color: rgb(48, 43, 43);
+}
+
+.logout-button {
+  background-color: rgb(194, 220, 235);
+  height: 40px;
+}
+
+.logout-button:hover {
+  background-color: #bebebe;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.logout-btn-yes {
+  background-color: #5c9dc0;
+  color: #ececec;
+  font-weight: 600;
+}
+
+.logout-btn-no {
+  background-color: #ececec;
+  color: rgb(63, 63, 63);
+  font-weight: 600;
+}
+
+.logout-btn-yes:hover,
+.logout-btn-no:hover {
+  background-color: rgb(194, 220, 235);
+}

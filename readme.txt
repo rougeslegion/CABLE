@@ -11,7 +11,8 @@ Setting up:
 
 		in '../api/views.py':
 			find 'client' variable:
-				replace "bacdive.BacdiveClient" arguments to credentials to use (shown as ('email', 'password')) from https://api.bacdive.dsmz.de/
+				replace "bacdive.BacdiveClient" arguments to credentials to use 
+				(shown as ('email', 'password')) from https://api.bacdive.dsmz.de/
 
 		in '../bacdiveapi/settings.py':
 			find "DATABASES":
@@ -40,3 +41,12 @@ To run:
 
 // ------------------------------------------------
 
+Known Issues and Troubleshooting:
+
+- While connection to the BacDive API has been accomplished and strains can be downloaded, downloading BacDive data from some strains will fail because of the non-uniformity of the information/number of items per field. This will require a more through schema fix.
+
+- BacDive search returns a 500 error when query is invalid/nothing is found. This can be safely ignored.
+
+- BacDive search will occasionally return a 400 error, replicably from inactivity, sometimes even if search query is valid. To fix this, restart Django server or manually log-in credentials in https://api.bacdive.dsmz.de/. There is no need to restart browser interface.
+
+- Directly moving to the "BacDive search" header route from the "edit strain" page will result in a 400 error. This results in no changes to the data and can be safely ignored. Move back to the individual strain/strains list before moving back to the bacdive search.

@@ -1,0 +1,30 @@
+.main-div {
+    display: flex;
+    height: 100vh;
+    
+    width: 100%;
+    padding: 3%;
+    padding-top: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    align-items: "center";
+    justify-content: "center";
+    margin: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  border-color: "3px solid rgb(0, 0, 0)";
+  margin: 0 auto;
+}
+
+a:visited {
+  text-decoration: none;
+  color: blue;
+}

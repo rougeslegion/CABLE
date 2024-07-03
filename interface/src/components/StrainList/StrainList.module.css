@@ -1,0 +1,35 @@
+.main-div {
+    display: flex;
+    margin: 0 auto;
+
+    height: 100vh;
+    width: 100;
+
+    padding: 3%;
+    padding-top: 4%;
+    padding-left: 12%;
+    padding-right: 12%;
+
+    align-items: "center";
+    justify-content: "center";
+    text-align: center;
+}
+
+table{
+  margin: 0 auto;
+}
+
+td{
+  border: 0.75px solid;
+  padding: 5px;
+}
+
+th{
+  border: 1px solid;
+  padding: 5px;
+}
+
+a:visited { 
+  text-decoration: none;
+  color: blue;
+ }

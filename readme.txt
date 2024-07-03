@@ -60,8 +60,8 @@ Making changes:
 	---
 
 	any changes made to the backend requires running:
-		  python manage.py migrate
-		  python manage.py makemigrations
+		python manage.py migrate
+		python manage.py makemigrations
 
 // ------------------------------------------------
 

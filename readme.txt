@@ -18,6 +18,11 @@ Setting up:
 			find "DATABASES":
 				configure DATABASE profile to match system requirements/if database already exists.
 				(Django will handle the schema and making the database if it doesn't exist)
+				
+				if database doesn't exist:
+					inside '/backend':
+						python manage.py migrate
+						python manage.py makemigrations
 
 
 	inside '/interface':
@@ -41,9 +46,13 @@ To run:
 
 // ------------------------------------------------
 
+
+
+// ------------------------------------------------
+
 Known Issues and Troubleshooting:
 
-- While connection to the BacDive API has been accomplished and strains can be downloaded, downloading BacDive data from some strains will fail because of the non-uniformity of the information/number of items per field. This will require a more through schema fix.
+- While connection to the BacDive API has been accomplished and strains can be downloaded, downloading BacDive data from some strains will fail because of the non-uniformity of the information/number of items per field employed by some strains. This will require a more thorough schema fix.
 
 - BacDive search returns a 500 error when query is invalid/nothing is found. This can be safely ignored.
 

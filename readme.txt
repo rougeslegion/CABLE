@@ -46,7 +46,22 @@ To run:
 
 // ------------------------------------------------
 
+Making changes:
 
+	Schema changes:
+		schema can be found in '../api/models.py'
+		changes will have to be reflected in '../api/serializers.py' for functions
+
+	Function changes:
+		functions can be found in '../api/views.py'
+		check serializers used in '../api/serializers.py'
+		functions can be made usable in '../api/urls.py'
+
+	---
+
+	any changes made to the backend requires running:
+		  python manage.py migrate
+		  python manage.py makemigrations
 
 // ------------------------------------------------
 
